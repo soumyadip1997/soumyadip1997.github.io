@@ -12,12 +12,15 @@
     <script defer src="./script.js"></script>
   </head>
   <body>
-    <div class="bg-orb orb-1"></div>
-    <div class="bg-orb orb-2"></div>
-    <div class="bg-grid"></div>
+    <div class="bg-blur blur-1"></div>
+    <div class="bg-blur blur-2"></div>
+    <div class="bg-noise"></div>
 
     <header class="site-header">
-      <a class="logo" href="#top">SR</a>
+      <div class="brand">
+        <a class="logo" href="#top">SR</a>
+        <span class="brand-text">Soumyadip Roy</span>
+      </div>
 
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
         ☰
@@ -27,258 +30,216 @@
         <a href="#about">About</a>
         <a href="#looking">Looking For</a>
         <a href="#projects">Projects</a>
-        <a href="#contact" class="nav-cta">Contact</a>
+        <a href="#contact" class="nav-btn">Contact</a>
       </nav>
     </header>
 
     <main id="top">
+      <!-- HERO -->
       <section class="hero container">
-        <div class="hero-left glass">
-          <div class="profile-ring">
-            <img
-              src="https://via.placeholder.com/260x260.png?text=Your+Photo"
-              alt="Profile placeholder"
-              class="profile-pic"
-            />
-          </div>
-
-          <div class="mini-badges">
-            <span>PhD Student</span>
-            <span>Deep Learning</span>
-            <span>Bioinformatics</span>
-          </div>
-        </div>
-
-        <div class="hero-right">
-          <p class="eyebrow">Hello, I’m</p>
-          <h1>Soumyadip Roy</h1>
-          <p class="hero-role">PhD Student in Computer Science</p>
+        <div class="hero-text">
+          <span class="hero-badge">PhD Student • ML • Genomics • Bioinformatics</span>
+          <h1>
+            Building <span class="gradient-text">AI for biology</span> and
+            research tools for genomic discovery.
+          </h1>
           <p class="hero-desc">
-            I work on deep learning, computational genomics, bioinformatics, and scientific AI.
-            My interests include sequence models, genomic foundation models, enhancer prediction,
-            transcription factor analysis, and research tools for biological data.
+            I am a PhD student in Computer Science at Colorado State University working on deep learning,
+            computational genomics, regulatory sequence modeling, and scientific machine learning systems.
           </p>
 
           <div class="hero-actions">
-            <a href="#projects" class="btn btn-primary">Explore Projects</a>
-            <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
           </div>
 
-          <div class="hero-highlights">
-            <div class="highlight-card glass">
-              <span class="highlight-number">ML</span>
-              <span class="highlight-label">Research + Engineering</span>
-            </div>
-            <div class="highlight-card glass">
-              <span class="highlight-number">Genomics</span>
-              <span class="highlight-label">Sequence & Regulatory Modeling</span>
-            </div>
-            <div class="highlight-card glass">
-              <span class="highlight-number">Web</span>
-              <span class="highlight-label">Interactive Scientific Tools</span>
+          <div class="quick-links">
+            <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://huggingface.co/yourusername" target="_blank" rel="noreferrer">Hugging Face</a>
+            <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="profile-card">
+            <div class="profile-glow"></div>
+            <img
+              src="https://via.placeholder.com/320x360.png?text=Your+Photo"
+              alt="Profile placeholder"
+              class="profile-pic"
+            />
+            <div class="profile-info">
+              <h3>Soumyadip Roy</h3>
+              <p>Deep Learning • Bioinformatics • Computational Genomics</p>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- FEATURE STRIP -->
+      <section class="feature-strip container">
+        <div class="feature-pill">Deep Learning for Genomics</div>
+        <div class="feature-pill">Research Engineering</div>
+        <div class="feature-pill">Hugging Face Spaces</div>
+        <div class="feature-pill">Scientific AI Tools</div>
+      </section>
+
+      <!-- ABOUT -->
       <section id="about" class="section container">
-        <div class="section-header">
-          <p class="section-tag">About</p>
-          <h2>About Me</h2>
+        <div class="section-title">
+          <span>About</span>
+          <h2>Who I Am</h2>
         </div>
 
-        <div class="content-grid">
-          <div class="glass card large-card">
+        <div class="cards-2">
+          <div class="card">
             <p>
-              I am a PhD student at Colorado State University working on machine learning methods
-              for genomics and biological sequence analysis. My research focuses on deep learning,
-              regulatory genomics, multi-modal biological data integration, and building useful
-              tools for scientific discovery.
+              I work on machine learning methods for genomics and biological sequence analysis.
+              My research includes sequence models, enhancer prediction, transcription factor analysis,
+              multi-modal genomic learning, and scientific software tooling.
             </p>
           </div>
 
-          <div class="glass card side-card">
-            <h3>Areas of Interest</h3>
-            <ul class="clean-list">
-              <li>Deep learning for genomics</li>
-              <li>Bioinformatics pipelines</li>
-              <li>Sequence foundation models</li>
-              <li>Scientific ML systems</li>
-              <li>Interactive research tools</li>
+          <div class="card">
+            <h3>Current Focus</h3>
+            <ul>
+              <li>Genomic foundation models</li>
+              <li>Enhancer and regulatory sequence prediction</li>
+              <li>Bioinformatics pipelines and data tooling</li>
+              <li>Interactive ML and genomics web applications</li>
             </ul>
           </div>
         </div>
       </section>
 
+      <!-- LOOKING FOR -->
       <section id="looking" class="section container">
-        <div class="section-header">
-          <p class="section-tag">Opportunities</p>
+        <div class="section-title">
+          <span>Opportunities</span>
           <h2>What I’m Looking For</h2>
         </div>
 
-        <div class="glass card spotlight-card">
-          <div class="spotlight-icon">✦</div>
+        <div class="highlight-card">
+          <div class="highlight-icon">✦</div>
           <div>
             <p>
               I am looking for opportunities in <strong>machine learning</strong>,
               <strong>AI research</strong>, <strong>bioinformatics</strong>,
               <strong>computational biology</strong>, and <strong>software engineering</strong>
-              where I can contribute to impactful models, tools, and systems for scientific and
-              real-world applications.
+              where I can help build impactful models, tools, and systems for science and real-world applications.
             </p>
           </div>
         </div>
       </section>
 
+      <!-- PROJECTS -->
       <section id="projects" class="section container">
-        <div class="section-header">
-          <p class="section-tag">Portfolio</p>
-          <h2>Projects</h2>
-          <p class="section-sub">
-            Add your GitHub repositories and Hugging Face models, spaces, or datasets here.
-          </p>
+        <div class="section-title">
+          <span>Projects</span>
+          <h2>Things I’ve Built</h2>
         </div>
 
-        <div class="projects-layout">
-          <div class="glass card project-column">
-            <div class="column-title-row">
-              <h3>GitHub Projects</h3>
-              <span class="chip">Code</span>
+        <div class="project-columns">
+          <div class="project-panel">
+            <div class="panel-header">
+              <h3>GitHub</h3>
+              <span class="panel-chip">Repositories</span>
             </div>
 
             <a class="project-card" href="https://github.com/yourusername/project1" target="_blank" rel="noreferrer">
-              <div class="project-top">
-                <h4>Project One</h4>
-                <span class="arrow">↗</span>
-              </div>
-              <p>
-                Short description of your GitHub project. Mention what it does, what tech it uses,
-                or why it matters.
-              </p>
-              <div class="project-tags">
+              <h4>Project One</h4>
+              <p>Short description of your GitHub project and what problem it solves.</p>
+              <div class="tags">
                 <span>Python</span>
                 <span>PyTorch</span>
-                <span>Research</span>
+                <span>ML</span>
               </div>
             </a>
 
             <a class="project-card" href="https://github.com/yourusername/project2" target="_blank" rel="noreferrer">
-              <div class="project-top">
-                <h4>Project Two</h4>
-                <span class="arrow">↗</span>
-              </div>
-              <p>
-                Another project summary. You can describe a model, pipeline, visualization tool,
-                or deployment.
-              </p>
-              <div class="project-tags">
+              <h4>Project Two</h4>
+              <p>Short description of another project. Mention impact, model, or pipeline.</p>
+              <div class="tags">
                 <span>Genomics</span>
                 <span>Data</span>
-                <span>Web</span>
+                <span>Tooling</span>
               </div>
             </a>
 
             <a class="project-card" href="https://github.com/yourusername/project3" target="_blank" rel="noreferrer">
-              <div class="project-top">
-                <h4>Project Three</h4>
-                <span class="arrow">↗</span>
-              </div>
-              <p>
-                Add your third repository here with a short and clean explanation.
-              </p>
-              <div class="project-tags">
-                <span>ML</span>
-                <span>Tools</span>
+              <h4>Project Three</h4>
+              <p>Another short, strong description.</p>
+              <div class="tags">
+                <span>Research</span>
                 <span>Open Source</span>
               </div>
             </a>
           </div>
 
-          <div class="glass card project-column">
-            <div class="column-title-row">
+          <div class="project-panel">
+            <div class="panel-header">
               <h3>Hugging Face</h3>
-              <span class="chip">Models / Spaces</span>
+              <span class="panel-chip">Spaces / Models</span>
             </div>
 
             <a class="project-card" href="https://huggingface.co/yourusername/project1" target="_blank" rel="noreferrer">
-              <div class="project-top">
-                <h4>Space or Model One</h4>
-                <span class="arrow">↗</span>
-              </div>
-              <p>
-                Add your Hugging Face Space, model, or dataset and briefly describe what users can
-                do with it.
-              </p>
-              <div class="project-tags">
-                <span>Hugging Face</span>
+              <h4>Space or Model One</h4>
+              <p>Describe your hosted Space, model, dataset, or demo.</p>
+              <div class="tags">
                 <span>Demo</span>
+                <span>Inference</span>
                 <span>AI</span>
               </div>
             </a>
 
             <a class="project-card" href="https://huggingface.co/yourusername/project2" target="_blank" rel="noreferrer">
-              <div class="project-top">
-                <h4>Space or Model Two</h4>
-                <span class="arrow">↗</span>
-              </div>
-              <p>
-                Describe another hosted project such as an inference demo, dataset browser, or
-                interactive visualization.
-              </p>
-              <div class="project-tags">
-                <span>Dataset</span>
+              <h4>Space or Model Two</h4>
+              <p>Interactive browser, deployment, or model showcase.</p>
+              <div class="tags">
                 <span>Visualization</span>
-                <span>Demo</span>
+                <span>Dataset</span>
               </div>
             </a>
 
             <a class="project-card" href="https://huggingface.co/yourusername/project3" target="_blank" rel="noreferrer">
-              <div class="project-top">
-                <h4>Space or Model Three</h4>
-                <span class="arrow">↗</span>
-              </div>
-              <p>
-                Add a third Hugging Face link here.
-              </p>
-              <div class="project-tags">
-                <span>Model</span>
-                <span>Inference</span>
+              <h4>Space or Model Three</h4>
+              <p>Another hosted project description.</p>
+              <div class="tags">
                 <span>Research</span>
+                <span>Space</span>
               </div>
             </a>
           </div>
         </div>
       </section>
 
+      <!-- CONTACT -->
       <section id="contact" class="section container">
-        <div class="section-header">
-          <p class="section-tag">Connect</p>
-          <h2>Contact</h2>
+        <div class="section-title">
+          <span>Contact</span>
+          <h2>Let’s Connect</h2>
         </div>
 
-        <div class="contact-grid">
-          <div class="glass card">
-            <h3>Let’s Connect</h3>
+        <div class="cards-2">
+          <div class="card">
             <p>
-              Feel free to reach out for research collaborations, internships, software projects,
-              or machine learning opportunities.
+              Feel free to reach out for research collaborations, internships,
+              software engineering opportunities, or machine learning roles.
             </p>
           </div>
 
-          <div class="glass card">
-            <div class="contact-links">
-              <a href="mailto:your_email@example.com">your_email@example.com</a>
-              <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">GitHub</a>
-              <a href="https://huggingface.co/yourusername" target="_blank" rel="noreferrer">Hugging Face</a>
-              <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noreferrer">LinkedIn</a>
-            </div>
+          <div class="card contact-links">
+            <a href="mailto:your_email@example.com">your_email@example.com</a>
+            <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://huggingface.co/yourusername" target="_blank" rel="noreferrer">Hugging Face</a>
+            <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noreferrer">LinkedIn</a>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <p>© <span id="year"></span> Soumyadip Roy. Built for GitHub Pages.</p>
+      <p>© <span id="year"></span> Soumyadip Roy</p>
     </footer>
   </body>
 </html>
