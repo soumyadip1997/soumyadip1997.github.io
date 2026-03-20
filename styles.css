@@ -536,6 +536,8 @@ li {
   }
 
   .brand-text {
-    display: none;
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
   }
 }
