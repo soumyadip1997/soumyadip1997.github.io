@@ -3,243 +3,190 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Soumyadip Roy | Portfolio</title>
-    <meta
-      name="description"
-      content="Soumyadip Roy - PhD student in Computer Science working on deep learning, genomics, bioinformatics, and machine learning systems."
-    />
+    <title>Your Name — Portfolio</title>
+    <meta name="description" content="Personal website and portfolio." />
+
     <link rel="stylesheet" href="./styles.css" />
     <script defer src="./script.js"></script>
   </head>
-  <body>
-    <div class="bg-blur blur-1"></div>
-    <div class="bg-blur blur-2"></div>
-    <div class="bg-noise"></div>
 
+  <body>
     <header class="site-header">
-      <div class="brand">
-        <a class="logo" href="#top">SR</a>
-        <span class="brand-text">Soumyadip Roy</span>
-      </div>
+      <a class="logo" href="#top" aria-label="Home">YN</a>
 
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
         ☰
       </button>
 
       <nav class="nav" id="nav">
-        <a href="#about">About</a>
-        <a href="#looking">Looking For</a>
         <a href="#projects">Projects</a>
-        <a href="#contact" class="nav-btn">Contact</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="btn" href="#contact">Let’s talk</a>
       </nav>
     </header>
 
     <main id="top">
-      <!-- HERO -->
-      <section class="hero container">
-        <div class="hero-text">
-          <span class="hero-badge">PhD Student • ML • Genomics • Bioinformatics</span>
-          <h1>
-            Building <span class="gradient-text">AI for biology</span> and
-            research tools for genomic discovery.
-          </h1>
-          <p class="hero-desc">
-            I am a PhD student in Computer Science at Colorado State University working on deep learning,
-            computational genomics, regulatory sequence modeling, and scientific machine learning systems.
+      <section class="hero">
+        <div class="hero-content">
+          <p class="pill">👋 Hi, I’m <span class="accent">Your Name</span></p>
+          <h1>Building cool things on the web.</h1>
+          <p class="sub">
+            Short one-liner about what you do. Example: “PhD student working on deep learning for genomics and
+            building interactive genome visualizers.”
           </p>
 
           <div class="hero-actions">
-            <a href="#projects" class="btn btn-primary">View Projects</a>
-            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            <a class="btn" href="#projects">View projects</a>
+            <a class="btn btn-ghost" href="#contact">Contact me</a>
           </div>
 
-          <div class="quick-links">
-            <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="https://huggingface.co/yourusername" target="_blank" rel="noreferrer">Hugging Face</a>
-            <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noreferrer">LinkedIn</a>
+          <div class="stats">
+            <div class="stat">
+              <div class="stat-num">10+</div>
+              <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">5k+</div>
+              <div class="stat-label">Users/Views</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">2026</div>
+              <div class="stat-label">Available</div>
+            </div>
           </div>
         </div>
 
-        <div class="hero-visual">
-          <div class="profile-card">
-            <div class="profile-glow"></div>
-            <img
-              src="https://via.placeholder.com/320x360.png?text=Your+Photo"
-              alt="Profile placeholder"
-              class="profile-pic"
-            />
-            <div class="profile-info">
-              <h3>Soumyadip Roy</h3>
-              <p>Deep Learning • Bioinformatics • Computational Genomics</p>
+        <div class="hero-card">
+          <div class="card">
+            <h3>Featured</h3>
+            <p class="muted">
+              Put your best project here with a quick summary and links.
+            </p>
+            <div class="card-links">
+              <a href="#" target="_blank" rel="noreferrer">Live demo</a>
+              <a href="#" target="_blank" rel="noreferrer">GitHub</a>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- FEATURE STRIP -->
-      <section class="feature-strip container">
-        <div class="feature-pill">Deep Learning for Genomics</div>
-        <div class="feature-pill">Research Engineering</div>
-        <div class="feature-pill">Hugging Face Spaces</div>
-        <div class="feature-pill">Scientific AI Tools</div>
-      </section>
-
-      <!-- ABOUT -->
-      <section id="about" class="section container">
-        <div class="section-title">
-          <span>About</span>
-          <h2>Who I Am</h2>
+      <section id="projects" class="section">
+        <div class="section-head">
+          <h2>Projects</h2>
+          <p class="muted">A few things I’ve built recently.</p>
         </div>
 
-        <div class="cards-2">
+        <div class="grid">
+          <article class="project">
+            <h3>Project One</h3>
+            <p class="muted">1–2 lines describing what it does and why it’s interesting.</p>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">Gradio</span>
+              <span class="tag">Genomics</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noreferrer">Live</a>
+              <a href="#" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <h3>Project Two</h3>
+            <p class="muted">Short description. Add impact numbers if you have them.</p>
+            <div class="tags">
+              <span class="tag">PyTorch</span>
+              <span class="tag">Transformers</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noreferrer">Live</a>
+              <a href="#" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <h3>Project Three</h3>
+            <p class="muted">Short description.</p>
+            <div class="tags">
+              <span class="tag">React</span>
+              <span class="tag">D3</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noreferrer">Live</a>
+              <a href="#" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="section-head">
+          <h2>About</h2>
+          <p class="muted">A quick intro.</p>
+        </div>
+
+        <div class="about">
           <div class="card">
-            <p>
-              I work on machine learning methods for genomics and biological sequence analysis.
-              My research includes sequence models, enhancer prediction, transcription factor analysis,
-              multi-modal genomic learning, and scientific software tooling.
+            <h3>What I do</h3>
+            <p class="muted">
+              Write a short paragraph about your focus, tools, and what kinds of problems you like solving.
             </p>
           </div>
 
           <div class="card">
-            <h3>Current Focus</h3>
-            <ul>
-              <li>Genomic foundation models</li>
-              <li>Enhancer and regulatory sequence prediction</li>
-              <li>Bioinformatics pipelines and data tooling</li>
-              <li>Interactive ML and genomics web applications</li>
+            <h3>Skills</h3>
+            <ul class="list">
+              <li>Deep learning (PyTorch, Lightning)</li>
+              <li>Genomics pipelines (BED/BAM/BigWig, IGV)</li>
+              <li>Web apps (Gradio, Streamlit, React)</li>
             </ul>
           </div>
         </div>
       </section>
 
-      <!-- LOOKING FOR -->
-      <section id="looking" class="section container">
-        <div class="section-title">
-          <span>Opportunities</span>
-          <h2>What I’m Looking For</h2>
+      <section id="contact" class="section">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p class="muted">Send a message (this form is front-end only).</p>
         </div>
 
-        <div class="highlight-card">
-          <div class="highlight-icon">✦</div>
-          <div>
-            <p>
-              I am looking for opportunities in <strong>machine learning</strong>,
-              <strong>AI research</strong>, <strong>bioinformatics</strong>,
-              <strong>computational biology</strong>, and <strong>software engineering</strong>
-              where I can help build impactful models, tools, and systems for science and real-world applications.
-            </p>
-          </div>
-        </div>
-      </section>
+        <div class="contact">
+          <form class="card" id="contactForm">
+            <label>
+              Name
+              <input name="name" type="text" placeholder="Your name" required />
+            </label>
 
-      <!-- PROJECTS -->
-      <section id="projects" class="section container">
-        <div class="section-title">
-          <span>Projects</span>
-          <h2>Things I’ve Built</h2>
-        </div>
+            <label>
+              Email
+              <input name="email" type="email" placeholder="you@email.com" required />
+            </label>
 
-        <div class="project-columns">
-          <div class="project-panel">
-            <div class="panel-header">
-              <h3>GitHub</h3>
-              <span class="panel-chip">Repositories</span>
-            </div>
+            <label>
+              Message
+              <textarea name="message" rows="5" placeholder="What do you want to build?" required></textarea>
+            </label>
 
-            <a class="project-card" href="https://github.com/yourusername/project1" target="_blank" rel="noreferrer">
-              <h4>Project One</h4>
-              <p>Short description of your GitHub project and what problem it solves.</p>
-              <div class="tags">
-                <span>Python</span>
-                <span>PyTorch</span>
-                <span>ML</span>
-              </div>
-            </a>
+            <button class="btn" type="submit">Send</button>
+            <p class="muted small" id="formStatus" aria-live="polite"></p>
+          </form>
 
-            <a class="project-card" href="https://github.com/yourusername/project2" target="_blank" rel="noreferrer">
-              <h4>Project Two</h4>
-              <p>Short description of another project. Mention impact, model, or pipeline.</p>
-              <div class="tags">
-                <span>Genomics</span>
-                <span>Data</span>
-                <span>Tooling</span>
-              </div>
-            </a>
-
-            <a class="project-card" href="https://github.com/yourusername/project3" target="_blank" rel="noreferrer">
-              <h4>Project Three</h4>
-              <p>Another short, strong description.</p>
-              <div class="tags">
-                <span>Research</span>
-                <span>Open Source</span>
-              </div>
-            </a>
-          </div>
-
-          <div class="project-panel">
-            <div class="panel-header">
-              <h3>Hugging Face</h3>
-              <span class="panel-chip">Spaces / Models</span>
-            </div>
-
-            <a class="project-card" href="https://huggingface.co/yourusername/project1" target="_blank" rel="noreferrer">
-              <h4>Space or Model One</h4>
-              <p>Describe your hosted Space, model, dataset, or demo.</p>
-              <div class="tags">
-                <span>Demo</span>
-                <span>Inference</span>
-                <span>AI</span>
-              </div>
-            </a>
-
-            <a class="project-card" href="https://huggingface.co/yourusername/project2" target="_blank" rel="noreferrer">
-              <h4>Space or Model Two</h4>
-              <p>Interactive browser, deployment, or model showcase.</p>
-              <div class="tags">
-                <span>Visualization</span>
-                <span>Dataset</span>
-              </div>
-            </a>
-
-            <a class="project-card" href="https://huggingface.co/yourusername/project3" target="_blank" rel="noreferrer">
-              <h4>Space or Model Three</h4>
-              <p>Another hosted project description.</p>
-              <div class="tags">
-                <span>Research</span>
-                <span>Space</span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- CONTACT -->
-      <section id="contact" class="section container">
-        <div class="section-title">
-          <span>Contact</span>
-          <h2>Let’s Connect</h2>
-        </div>
-
-        <div class="cards-2">
           <div class="card">
-            <p>
-              Feel free to reach out for research collaborations, internships,
-              software engineering opportunities, or machine learning roles.
-            </p>
-          </div>
-
-          <div class="card contact-links">
-            <a href="mailto:your_email@example.com">your_email@example.com</a>
-            <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="https://huggingface.co/yourusername" target="_blank" rel="noreferrer">Hugging Face</a>
-            <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noreferrer">LinkedIn</a>
+            <h3>Links</h3>
+            <p class="muted">Add your links here.</p>
+            <div class="link-list">
+              <a href="#" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a href="mailto:you@email.com">you@email.com</a>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <p>© <span id="year"></span> Soumyadip Roy</p>
+      <p>© <span id="year"></span> Your Name. Built with HTML/CSS/JS.</p>
     </footer>
   </body>
 </html>
